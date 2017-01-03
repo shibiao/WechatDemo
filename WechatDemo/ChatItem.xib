@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ChatItem" customModule="WechatDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="backgroundView" destination="fCH-e8-EJj" id="ROW-39-Tza"/>
+                <outlet property="iconImage" destination="TzV-7h-c3b" id="o4D-Km-k8j"/>
+                <outlet property="nameLabel" destination="dwC-CS-br3" id="3le-Af-7fI"/>
+                <outlet property="shortMessage" destination="RQe-p5-AmN" id="3BP-cd-bb5"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="432" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="fCH-e8-EJj">
+                    <rect key="frame" x="0.0" y="0.0" width="432" height="80"/>
+                    <subviews>
+                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TzV-7h-c3b">
+                            <rect key="frame" x="20" y="10" width="60" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="F9O-Yx-sYZ"/>
+                                <constraint firstAttribute="height" constant="60" id="UVO-sL-jJT"/>
+                            </constraints>
+                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="11" id="Bih-Lt-qu5"/>
+                        </imageView>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwC-CS-br3">
+                            <rect key="frame" x="100" y="53" width="304" height="17"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="摸摸哒" id="EvT-Qg-rN3">
+                                <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQe-p5-AmN">
+                            <rect key="frame" x="100" y="20" width="304" height="17"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="哈哈" id="Rcw-Ye-reF">
+                                <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="RQe-p5-AmN" secondAttribute="trailing" constant="30" id="0xx-nf-3p9"/>
+                        <constraint firstItem="TzV-7h-c3b" firstAttribute="leading" secondItem="fCH-e8-EJj" secondAttribute="leading" constant="20" id="1YI-2s-bW8"/>
+                        <constraint firstItem="dwC-CS-br3" firstAttribute="leading" secondItem="TzV-7h-c3b" secondAttribute="trailing" constant="22" id="6BO-nJ-LUu"/>
+                        <constraint firstItem="dwC-CS-br3" firstAttribute="top" secondItem="fCH-e8-EJj" secondAttribute="top" constant="10" id="I6j-Pt-0bo"/>
+                        <constraint firstAttribute="bottom" secondItem="TzV-7h-c3b" secondAttribute="bottom" constant="10" id="XOL-4J-FGC"/>
+                        <constraint firstItem="RQe-p5-AmN" firstAttribute="leading" secondItem="TzV-7h-c3b" secondAttribute="trailing" constant="22" id="cCa-ZS-CYU"/>
+                        <constraint firstAttribute="height" constant="80" id="kn9-c3-mmq"/>
+                        <constraint firstAttribute="bottom" secondItem="RQe-p5-AmN" secondAttribute="bottom" constant="20" id="riz-yx-CRf"/>
+                        <constraint firstItem="TzV-7h-c3b" firstAttribute="top" secondItem="fCH-e8-EJj" secondAttribute="top" constant="10" id="sb6-9x-bZV"/>
+                        <constraint firstAttribute="trailing" secondItem="dwC-CS-br3" secondAttribute="trailing" constant="30" id="xok-oJ-ybM"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="fCH-e8-EJj" secondAttribute="trailing" id="LKP-u0-hDS"/>
+                <constraint firstAttribute="bottom" secondItem="fCH-e8-EJj" secondAttribute="bottom" id="ZYN-Yt-fCh"/>
+                <constraint firstItem="fCH-e8-EJj" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="bcz-qL-0GZ"/>
+                <constraint firstItem="fCH-e8-EJj" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="hWl-aY-9eN"/>
+            </constraints>
+            <point key="canvasLocation" x="115" y="92"/>
+        </customView>
+        <customObject id="VD6-PM-7ON" customClass="ChatItem" customModule="WechatDemo" customModuleProvider="target"/>
+    </objects>
+    <resources>
+        <image name="11" width="72" height="72"/>
+    </resources>
+</document>
