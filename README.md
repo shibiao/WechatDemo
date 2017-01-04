@@ -4,4 +4,4 @@ MAC WeChat 仿微信MAC端
 
 if it's useful for you, please Starred at top right corner.
 
-![image](https://github.com/shibiao/WechatDemo/blob/master/aImage.png)
+![image](https://github.com/shibiao/WechatDemo/blob/master/QQ20170104-0.png)
