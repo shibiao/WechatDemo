@@ -10,11 +10,13 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
+    var status = NSStatusBar.system().statusItem(withLength: NSSquareStatusItemLength)
+    
 
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
+        NSApp.applicationIconImage = NSImage(named: "AppIcon")
+        status.image = NSImage(named: "wechat")
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
