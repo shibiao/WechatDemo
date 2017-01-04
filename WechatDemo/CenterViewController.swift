@@ -13,34 +13,24 @@ class CenterViewController: NSViewController,NSCollectionViewDelegateFlowLayout 
     @IBOutlet weak var collectionView: NSCollectionView!
     
     @IBAction func add(_ sender: NSButton) {
-        
-//       let addWindowContent = NSStoryboard(name: "Main", bundle: Bundle.main).instantiateController(withIdentifier: "AddWindowController") as! AddWindowController
-//        let sheetWindow = addWindowContent.window
-//        let x = self.view.window?.frame.origin.x
-//        let y = self.view.window?.frame.origin.y
-//        let width = self.view.window?.frame.size.width
-//        let height = self.view.window?.frame.size.height
-//        sheetWindow?.styleMask = .borderless
-//        sheetWindow?.contentRect(forFrameRect: NSMakeRect(x!+height! - 40,y! + width!/2 - (sheetWindow?.frame.width)!/2, 400, 250))
-//        
-//       view.window?.addChildWindow(sheetWindow!, ordered: .above)
-    }
 
+    }
+    let grayColor = NSColor(red:0.95, green:0.95, blue:0.95, alpha:1.00)
     override func viewDidLoad() {
         super.viewDidLoad()
         view.wantsLayer = true
-        view.layer?.backgroundColor = NSColor(red:0.95, green:0.95, blue:0.95, alpha:1.00).cgColor
+        view.layer?.backgroundColor = grayColor.cgColor
         collectionView.wantsLayer = true
-        collectionView.layer?.backgroundColor = NSColor(red:0.95, green:0.95, blue:0.95, alpha:1.00).cgColor
+        collectionView.layer?.backgroundColor = grayColor.cgColor
         collectionView.backgroundView?.wantsLayer = true
-        collectionView.backgroundView?.layer?.backgroundColor = NSColor(red:0.91, green:0.91, blue:0.91, alpha:1.00).cgColor
+        collectionView.backgroundView?.layer?.backgroundColor = grayColor.cgColor
         let nib = NSNib(nibNamed: "ChatItem", bundle: nil)
         collectionView.register(nib, forItemWithIdentifier: "ChatItem")
         collectionView.minItemSize = NSMakeSize(150, 80)
         collectionView.maxItemSize = NSMakeSize(250, 80)
-        let layout = NSCollectionViewFlowLayout()
-        layout.minimumLineSpacing = 0.9
         
+        let layout = NSCollectionViewFlowLayout()
+        layout.minimumLineSpacing = 0
         collectionView.collectionViewLayout = layout
         
     }

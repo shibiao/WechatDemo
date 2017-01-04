@@ -850,7 +850,7 @@
                                         </searchFieldCell>
                                     </searchField>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="aew-my-RI4">
-                                        <rect key="frame" x="199" y="0.0" width="20" height="20"/>
+                                        <rect key="frame" x="199" y="1" width="20" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="20" id="EBq-rK-FSP"/>
                                             <constraint firstAttribute="height" constant="20" id="ISh-E4-U6N"/>
@@ -864,6 +864,11 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="aew-my-RI4" secondAttribute="bottom" constant="1" id="EVL-Vo-Sbw"/>
+                                    <constraint firstItem="aew-my-RI4" firstAttribute="top" secondItem="S5S-vS-ztI" secondAttribute="top" constant="1" id="g0M-Gi-kMe"/>
+                                    <constraint firstAttribute="trailing" secondItem="aew-my-RI4" secondAttribute="trailing" id="vCm-qU-8NC"/>
+                                </constraints>
                                 <visibilityPriorities>
                                     <integer value="1000"/>
                                     <integer value="1000"/>
@@ -882,7 +887,7 @@
                                         <collectionView selectable="YES" allowsMultipleSelection="YES" id="raL-Ju-ZPj">
                                             <rect key="frame" x="0.0" y="0.0" width="251" height="371"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" id="2eS-BX-FmI">
+                                            <collectionViewFlowLayout key="collectionViewLayout" id="2eS-BX-FmI">
                                                 <size key="itemSize" width="50" height="50"/>
                                             </collectionViewFlowLayout>
                                             <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>

@@ -14,14 +14,16 @@ class ChatItem: NSCollectionViewItem {
     @IBOutlet weak var iconImage: NSImageView!
     @IBOutlet weak var nameLabel: NSTextField!
     @IBOutlet weak var shortMessage: NSTextField!
-    
+    let normalColor = NSColor(red:0.96, green:0.96, blue:0.96, alpha:1.00)
+    let selectedColor = NSColor(red:0.86, green:0.86, blue:0.86, alpha:1.00)
     override func viewDidLoad() {
         super.viewDidLoad()
         view.wantsLayer = true
         view.layer?.backgroundColor = NSColor(red:0.91, green:0.91, blue:0.91, alpha:1.00).cgColor
         
         backgroundView.wantsLayer = true
-        backgroundView.layer?.backgroundColor = NSColor(red:0.96, green:0.96, blue:0.96, alpha:1.00).cgColor
+        backgroundView.layer?.backgroundColor = normalColor.cgColor
+        
     }
     override var isSelected: Bool{
         didSet {
@@ -33,14 +35,14 @@ class ChatItem: NSCollectionViewItem {
         if isSelected {
             switch highlightState {
             case .none, .forDeselection:
-                backgroundView.layer?.backgroundColor = NSColor(red:0.96, green:0.96, blue:0.96, alpha:1.00).cgColor
+                backgroundView.layer?.backgroundColor = normalColor.cgColor
             case .forSelection:
-                backgroundView.layer?.backgroundColor = NSColor(red:0.86, green:0.86, blue:0.86, alpha:1.00).cgColor
+                backgroundView.layer?.backgroundColor = selectedColor.cgColor
             default:
                 break
             }
         }else{
-            backgroundView.layer?.backgroundColor = NSColor(red:0.96, green:0.96, blue:0.96, alpha:1.00).cgColor
+            backgroundView.layer?.backgroundColor = normalColor.cgColor
         }
     }
 }
