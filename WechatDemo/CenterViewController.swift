@@ -28,6 +28,8 @@ class CenterViewController: NSViewController,NSCollectionViewDelegateFlowLayout 
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.wantsLayer = true
+        view.layer?.backgroundColor = NSColor(red:0.95, green:0.95, blue:0.95, alpha:1.00).cgColor
         collectionView.wantsLayer = true
         collectionView.layer?.backgroundColor = NSColor(red:0.95, green:0.95, blue:0.95, alpha:1.00).cgColor
         collectionView.backgroundView?.wantsLayer = true

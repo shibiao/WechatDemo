@@ -827,55 +827,6 @@
             </objects>
             <point key="canvasLocation" x="740" y="879"/>
         </scene>
-        <!--Window Controller-->
-        <scene sceneID="J47-fk-dhL">
-            <objects>
-                <windowController storyboardIdentifier="AddWindowController" id="qz7-QA-BMX" customClass="AddWindowController" customModule="WechatDemo" customModuleProvider="target" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="ZYo-Ec-PmI">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="294" y="313" width="480" height="270"/>
-                        <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
-                    </window>
-                    <connections>
-                        <segue destination="4OE-ne-IAH" kind="relationship" relationship="window.shadowedContentViewController" id="hQq-Zi-xQg"/>
-                    </connections>
-                </windowController>
-                <customObject id="b27-qv-5VV" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-                <customObject id="INu-jZ-f9o" customClass="WindowController" customModule="WechatDemo" customModuleProvider="target"/>
-            </objects>
-            <point key="canvasLocation" x="928" y="-250"/>
-        </scene>
-        <!--Add View Controller-->
-        <scene sceneID="JZe-Iu-2xT">
-            <objects>
-                <viewController id="4OE-ne-IAH" customClass="AddViewController" customModule="WechatDemo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="0kg-cQ-64k">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <subviews>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zt7-el-s5c">
-                                <rect key="frame" x="391" y="13" width="67" height="32"/>
-                                <buttonCell key="cell" type="push" title="取消" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="HII-R7-pqi">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="endSheet:" target="4OE-ne-IAH" id="4fc-Db-Dpn"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="zt7-el-s5c" secondAttribute="bottom" constant="20" symbolic="YES" id="ceu-GN-beS"/>
-                            <constraint firstAttribute="trailing" secondItem="zt7-el-s5c" secondAttribute="trailing" constant="28" id="u4D-Ez-qhb"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <customObject id="vNo-du-4b6" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-                <customObject id="PZH-gB-q7r" customClass="CenterViewController" customModule="WechatDemo" customModuleProvider="target"/>
-            </objects>
-            <point key="canvasLocation" x="1635" y="-275"/>
-        </scene>
         <!--CenterView-->
         <scene sceneID="fuX-dE-IU5">
             <objects>
@@ -1112,7 +1063,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="450" height="150"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <textView importsGraphics="NO" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" smartInsertDelete="YES" id="ACD-BG-wWX">
+                                        <textView importsGraphics="NO" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" smartInsertDelete="YES" id="ACD-BG-wWX" customClass="SendMessageTextView" customModule="WechatDemo" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="450" height="150"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

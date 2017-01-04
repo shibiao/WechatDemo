@@ -20,6 +20,8 @@ class RightViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.wantsLayer = true
+        view.layer?.backgroundColor = NSColor(red:0.95, green:0.95, blue:0.95, alpha:1.00).cgColor
         //顶部视图设置
         topBackgroundView.wantsLayer = true
         topBackgroundView.layer?.backgroundColor = NSColor(red:0.95, green:0.95, blue:0.95, alpha:1.00).cgColor
@@ -50,3 +52,4 @@ extension RightViewController: NSCollectionViewDelegate,NSCollectionViewDataSour
         return NSCollectionViewItem()
     }
 }
+

@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		916A5E611E1B7A1E0082D09E /* AddWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916A5E601E1B7A1E0082D09E /* AddWindowController.swift */; };
-		916A5E631E1B7E0C0082D09E /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916A5E621E1B7E0C0082D09E /* AddViewController.swift */; };
+		916A5E8E1E1CA05F0082D09E /* SendMessageTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916A5E8D1E1CA05F0082D09E /* SendMessageTextView.swift */; };
 		9183FE2F1E1B4A2D00DCE31B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9183FE2E1E1B4A2D00DCE31B /* AppDelegate.swift */; };
 		9183FE311E1B4A2D00DCE31B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9183FE301E1B4A2D00DCE31B /* ViewController.swift */; };
 		9183FE341E1B4A2D00DCE31B /* WechatDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9183FE321E1B4A2D00DCE31B /* WechatDemo.xcdatamodeld */; };
@@ -23,8 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		916A5E601E1B7A1E0082D09E /* AddWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddWindowController.swift; sourceTree = "<group>"; };
-		916A5E621E1B7E0C0082D09E /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		916A5E8D1E1CA05F0082D09E /* SendMessageTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendMessageTextView.swift; sourceTree = "<group>"; };
 		9183FE2B1E1B4A2D00DCE31B /* WechatDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WechatDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9183FE2E1E1B4A2D00DCE31B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9183FE301E1B4A2D00DCE31B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,8 +87,6 @@
 				9183FE421E1B4A5400DCE31B /* LeftSideController.swift */,
 				9183FE441E1B522200DCE31B /* CenterViewController.swift */,
 				9183FE461E1B522F00DCE31B /* RightViewController.swift */,
-				916A5E601E1B7A1E0082D09E /* AddWindowController.swift */,
-				916A5E621E1B7E0C0082D09E /* AddViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -100,6 +96,7 @@
 			children = (
 				9183FE491E1B53D500DCE31B /* ChatItem.swift */,
 				9183FE4A1E1B53D500DCE31B /* ChatItem.xib */,
+				916A5E8D1E1CA05F0082D09E /* SendMessageTextView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -177,7 +174,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				916A5E631E1B7E0C0082D09E /* AddViewController.swift in Sources */,
 				9183FE4B1E1B53D500DCE31B /* ChatItem.swift in Sources */,
 				9183FE311E1B4A2D00DCE31B /* ViewController.swift in Sources */,
 				9183FE471E1B522F00DCE31B /* RightViewController.swift in Sources */,
@@ -185,8 +181,8 @@
 				9183FE431E1B4A5400DCE31B /* LeftSideController.swift in Sources */,
 				9183FE451E1B522200DCE31B /* CenterViewController.swift in Sources */,
 				9183FE341E1B4A2D00DCE31B /* WechatDemo.xcdatamodeld in Sources */,
-				916A5E611E1B7A1E0082D09E /* AddWindowController.swift in Sources */,
 				9183FE2F1E1B4A2D00DCE31B /* AppDelegate.swift in Sources */,
+				916A5E8E1E1CA05F0082D09E /* SendMessageTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
