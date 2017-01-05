@@ -15,7 +15,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        NSApp.applicationIconImage = NSImage(named: "AppIcon")
+        //NSApp.applicationIconImage = NSImage(named: "AppIcon")
         status.image = NSImage(named: "wechat")
     }
 
