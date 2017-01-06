@@ -12,7 +12,11 @@ class WindowController: NSWindowController {
 
     override func windowDidLoad() {
         super.windowDidLoad()
-    
+        //reopen closed window
+        let appDelegate = NSApp.delegate as! AppDelegate
+        appDelegate.mainWindowController = self
+        
+        //setup titlebar
         window?.titlebarAppearsTransparent = true
         window?.titleVisibility = .hidden
         window?.styleMask = [.fullSizeContentView,.titled,.resizable,.miniaturizable,.closable]

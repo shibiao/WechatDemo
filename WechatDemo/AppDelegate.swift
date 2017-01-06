@@ -12,17 +12,22 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
     var status = NSStatusBar.system().statusItem(withLength: NSSquareStatusItemLength)
     
-
+    lazy var mainWindowController: WindowController? = nil
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         //NSApp.applicationIconImage = NSImage(named: "AppIcon")
         status.image = NSImage(named: "wechat")
+        
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }
-
+    func applicationShouldHandleReopen(_ sender: NSApplication, hasVisibleWindows flag: Bool) -> Bool {
+        mainWindowController?.window?.makeKeyAndOrderFront(self)
+        return true
+    }
+    
     // MARK: - Core Data stack
 
     lazy var applicationDocumentsDirectory: Foundation.URL = {
