@@ -31,7 +31,7 @@
                                 <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcE-ZX-EbR">
                                     <rect key="frame" x="0.0" y="0.0" width="241" height="233"/>
                                     <clipView key="contentView" id="1WQ-2b-7eV">
-                                        <rect key="frame" x="1" y="23" width="239" height="209"/>
+                                        <rect key="frame" x="1" y="0.0" width="239" height="232"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
                                             <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="hDJ-7e-y2t" viewBased="YES" id="fyW-Iv-fva">
