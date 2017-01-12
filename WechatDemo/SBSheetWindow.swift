@@ -14,14 +14,9 @@ class SBSheetWindow: NSWindow {
         setupUI()
     }
     func setupUI() {
+        //获取nib视图
         var nibArray = NSArray()
         Bundle.main.loadNibNamed("SBSheetWindowView", owner: self, topLevelObjects: &nibArray)
-//        self.contentView = nibArray[1] as! SBSheetWindowView
-       
-//        guard let tmpView = nibArray[1] as? SBSheetWindowView; self.contentView = tmpView else {
-//            ///
-//            return
-//        }
         if let tmpView = nibArray[1] as? SBSheetWindowView {
             self.contentView = tmpView
         }else{
