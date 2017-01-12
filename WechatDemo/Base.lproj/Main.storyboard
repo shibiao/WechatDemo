@@ -670,18 +670,6 @@
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
-                        <toolbar key="toolbar" implicitIdentifier="10EF4AB4-2542-4BBA-9412-8BA311F81655" autosavesConfiguration="NO" showsBaselineSeparator="NO" displayMode="iconAndLabel" sizeMode="regular" id="BJT-xw-8tr">
-                            <allowedToolbarItems>
-                                <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="9hX-Gw-xZu"/>
-                                <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="5A7-Zd-9P6"/>
-                                <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="8KR-Tr-XHk"/>
-                                <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="RU9-73-Tzw"/>
-                                <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="rqg-zc-8Cb"/>
-                            </allowedToolbarItems>
-                            <defaultToolbarItems>
-                                <toolbarItem reference="rqg-zc-8Cb"/>
-                            </defaultToolbarItems>
-                        </toolbar>
                     </window>
                     <connections>
                         <segue destination="2fR-Au-uU4" kind="relationship" relationship="window.shadowedContentViewController" id="v1T-ev-ZBQ"/>
@@ -784,8 +772,6 @@
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="550" id="3Fm-Y4-L0f"/>
-                                    <constraint firstAttribute="bottom" secondItem="WRP-ve-9aB" secondAttribute="bottom" constant="266" id="8np-Ca-iha"/>
                                     <constraint firstAttribute="width" constant="70" id="E8k-lq-s4P"/>
                                     <constraint firstItem="3Lj-ec-Lyp" firstAttribute="top" secondItem="uhd-nn-oCa" secondAttribute="top" constant="68" id="Gxw-j0-cZj"/>
                                     <constraint firstItem="WRP-ve-9aB" firstAttribute="centerX" secondItem="3Lj-ec-Lyp" secondAttribute="centerX" id="OJI-ZG-FCf"/>

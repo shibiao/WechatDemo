@@ -11,16 +11,14 @@ import Cocoa
 class CenterViewController: NSViewController,NSCollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var collectionView: NSCollectionView!
-    
+
     @IBAction func add(_ sender: NSButton) {
-        let x = self.view.window?.frame.origin.x
-        let y = self.view.window?.frame.origin.y
-        let width = self.view.window?.frame.size.width
-        let height = self.view.window?.frame.size.height
-        let sheetWindow = NSWindow(contentRect: NSMakeRect(x!+width!/2-200, y!+height!-345, 400, 300), styleMask: [.texturedBackground], backing: .nonretained, defer: true)
-        view.window?.addChildWindow(sheetWindow, ordered: .above)
+       
+        let sheetWindow = SBSheetWindow(contentRect: NSMakeRect(0, 0, 600, 450), styleMask: [.texturedBackground], backing: .nonretained, defer: true)
         
-        
+            view.window?.beginSheet(sheetWindow, completionHandler: nil)
+           
+   
     }
     let grayColor = NSColor(red:0.95, green:0.95, blue:0.95, alpha:1.00)
     override func viewDidLoad() {

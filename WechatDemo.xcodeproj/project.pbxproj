@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		916A5E8E1E1CA05F0082D09E /* SendMessageTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916A5E8D1E1CA05F0082D09E /* SendMessageTextView.swift */; };
+		916A5F9B1E1F8AA10082D09E /* AddFriendWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 916A5F9A1E1F8AA10082D09E /* AddFriendWindow.xib */; };
+		916A5F9D1E1F8ABD0082D09E /* AddFriendWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916A5F9C1E1F8ABD0082D09E /* AddFriendWindow.swift */; };
 		9183FE2F1E1B4A2D00DCE31B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9183FE2E1E1B4A2D00DCE31B /* AppDelegate.swift */; };
 		9183FE341E1B4A2D00DCE31B /* WechatDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9183FE321E1B4A2D00DCE31B /* WechatDemo.xcdatamodeld */; };
 		9183FE361E1B4A2D00DCE31B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9183FE351E1B4A2D00DCE31B /* Assets.xcassets */; };
@@ -18,10 +20,15 @@
 		9183FE471E1B522F00DCE31B /* RightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9183FE461E1B522F00DCE31B /* RightViewController.swift */; };
 		9183FE4B1E1B53D500DCE31B /* ChatItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9183FE491E1B53D500DCE31B /* ChatItem.swift */; };
 		9183FE4C1E1B53D500DCE31B /* ChatItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9183FE4A1E1B53D500DCE31B /* ChatItem.xib */; };
+		91E2A6691E271F6D0077BDD9 /* SBSheetWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E2A6681E271F6D0077BDD9 /* SBSheetWindow.swift */; };
+		91E2A66B1E2720440077BDD9 /* SBSheetWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E2A66A1E2720440077BDD9 /* SBSheetWindowView.swift */; };
+		91E2A66D1E27204D0077BDD9 /* SBSheetWindowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91E2A66C1E27204D0077BDD9 /* SBSheetWindowView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		916A5E8D1E1CA05F0082D09E /* SendMessageTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendMessageTextView.swift; sourceTree = "<group>"; };
+		916A5F9A1E1F8AA10082D09E /* AddFriendWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddFriendWindow.xib; sourceTree = "<group>"; };
+		916A5F9C1E1F8ABD0082D09E /* AddFriendWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFriendWindow.swift; sourceTree = "<group>"; };
 		9183FE2B1E1B4A2D00DCE31B /* WechatDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WechatDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9183FE2E1E1B4A2D00DCE31B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9183FE331E1B4A2D00DCE31B /* WechatDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WechatDemo.xcdatamodel; sourceTree = "<group>"; };
@@ -34,6 +41,9 @@
 		9183FE461E1B522F00DCE31B /* RightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightViewController.swift; sourceTree = "<group>"; };
 		9183FE491E1B53D500DCE31B /* ChatItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatItem.swift; sourceTree = "<group>"; };
 		9183FE4A1E1B53D500DCE31B /* ChatItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatItem.xib; sourceTree = "<group>"; };
+		91E2A6681E271F6D0077BDD9 /* SBSheetWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBSheetWindow.swift; sourceTree = "<group>"; };
+		91E2A66A1E2720440077BDD9 /* SBSheetWindowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBSheetWindowView.swift; sourceTree = "<group>"; };
+		91E2A66C1E27204D0077BDD9 /* SBSheetWindowView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBSheetWindowView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,9 +101,14 @@
 		9183FE4D1E1B53E800DCE31B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				916A5F9C1E1F8ABD0082D09E /* AddFriendWindow.swift */,
+				916A5F9A1E1F8AA10082D09E /* AddFriendWindow.xib */,
 				9183FE491E1B53D500DCE31B /* ChatItem.swift */,
 				9183FE4A1E1B53D500DCE31B /* ChatItem.xib */,
 				916A5E8D1E1CA05F0082D09E /* SendMessageTextView.swift */,
+				91E2A6681E271F6D0077BDD9 /* SBSheetWindow.swift */,
+				91E2A66A1E2720440077BDD9 /* SBSheetWindowView.swift */,
+				91E2A66C1E27204D0077BDD9 /* SBSheetWindowView.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -159,6 +174,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9183FE361E1B4A2D00DCE31B /* Assets.xcassets in Resources */,
+				91E2A66D1E27204D0077BDD9 /* SBSheetWindowView.xib in Resources */,
+				916A5F9B1E1F8AA10082D09E /* AddFriendWindow.xib in Resources */,
 				9183FE391E1B4A2D00DCE31B /* Main.storyboard in Resources */,
 				9183FE4C1E1B53D500DCE31B /* ChatItem.xib in Resources */,
 			);
@@ -175,8 +192,11 @@
 				9183FE471E1B522F00DCE31B /* RightViewController.swift in Sources */,
 				9183FE411E1B4A4200DCE31B /* WindowController.swift in Sources */,
 				9183FE431E1B4A5400DCE31B /* LeftSideController.swift in Sources */,
+				91E2A6691E271F6D0077BDD9 /* SBSheetWindow.swift in Sources */,
+				916A5F9D1E1F8ABD0082D09E /* AddFriendWindow.swift in Sources */,
 				9183FE451E1B522200DCE31B /* CenterViewController.swift in Sources */,
 				9183FE341E1B4A2D00DCE31B /* WechatDemo.xcdatamodeld in Sources */,
+				91E2A66B1E2720440077BDD9 /* SBSheetWindowView.swift in Sources */,
 				9183FE2F1E1B4A2D00DCE31B /* AppDelegate.swift in Sources */,
 				916A5E8E1E1CA05F0082D09E /* SendMessageTextView.swift in Sources */,
 			);
