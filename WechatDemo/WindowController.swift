@@ -27,8 +27,6 @@ class WindowController: NSWindowController,NSWindowDelegate {
     func window(_ window: NSWindow, willPositionSheet sheet: NSWindow, using rect: NSRect) -> NSRect {
         let width = window.frame.size.width
         let height = window.frame.size.height
-        print(NSStringFromRect(window.frame))
-        print(NSStringFromRect(sheet.frame))
         return NSMakeRect(width/2-sheet.frame.width/2, height+sheet.frame.size.height/2-45, sheet.frame.size.width, sheet.frame.size.height)
     }
 }
