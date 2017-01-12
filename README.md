@@ -7,6 +7,9 @@ MAC WeChat 仿微信MAC端
 if it's useful for you, please Starred at top right corner.I will update it all the time
 已经更新时间：
 2017.1.12
+***
 ![gif](https://github.com/shibiao/WechatDemo/blob/master/17.gif)
+***
 2017.1.4
+***
 ![image](https://github.com/shibiao/WechatDemo/blob/master/QQ20170104-1.png)
