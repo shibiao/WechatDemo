@@ -5,6 +5,7 @@ MAC WeChat 仿微信MAC端
 >简书详细博客：[Swift3.0 开发MACOS应用程序 (7)： 仿微信MAC端](http://www.jianshu.com/p/ae2ef53b3469)
 
 if it's useful for you, please Starred at top right corner.I will update it all the time
+***
 已经更新时间：
 2017.1.12
 ***
