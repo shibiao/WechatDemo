@@ -711,13 +711,13 @@
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="uhd-nn-oCa">
                                 <rect key="frame" x="0.0" y="0.0" width="70" height="550"/>
                                 <subviews>
-                                    <button translatesAutoresizingMaskIntoConstraints="NO" id="3Lj-ec-Lyp">
+                                    <button focusRingType="none" translatesAutoresizingMaskIntoConstraints="NO" id="3Lj-ec-Lyp">
                                         <rect key="frame" x="11" y="434" width="48" height="48"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="0xd-7M-RLy"/>
                                             <constraint firstAttribute="width" constant="48" id="JHw-HD-Ah2"/>
                                         </constraints>
-                                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="panda" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="7co-uE-n8a">
+                                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="panda" imagePosition="only" alignment="center" focusRingType="none" imageScaling="proportionallyUpOrDown" inset="2" id="7co-uE-n8a">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
@@ -1054,16 +1054,13 @@
                                     <rect key="frame" x="0.0" y="0.0" width="450" height="150"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <textView importsGraphics="NO" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" smartInsertDelete="YES" id="ACD-BG-wWX" customClass="SendMessageTextView" customModule="WechatDemo" customModuleProvider="target">
+                                        <textView importsGraphics="NO" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" allowsImageEditing="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" smartInsertDelete="YES" id="ACD-BG-wWX" customClass="SendMessageTextView" customModule="WechatDemo" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="450" height="150"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <size key="minSize" width="450" height="150"/>
                                             <size key="maxSize" width="463" height="10000000"/>
                                             <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                            <connections>
-                                                <outlet property="delegate" destination="vQq-08-OcU" id="2zf-Nm-di5"/>
-                                            </connections>
                                         </textView>
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

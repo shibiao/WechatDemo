@@ -8,19 +8,19 @@
 
 import Cocoa
 
-class SendMessageTextView: NSTextView, NSTextViewDelegate {
+class SendMessageTextView: NSTextView {
 
     override func awakeFromNib() {
         
-        self.delegate = self
+        
     }
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
         
         
     }
-    override func keyDown(with event: NSEvent) {
-        self.print("000")
-    }
+   
+   
+    
     
 }

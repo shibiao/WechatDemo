@@ -12,7 +12,7 @@ class RightViewController: NSViewController {
     var data = NSMutableArray()
     @IBOutlet weak var collectionView: NSCollectionView!
 
-    @IBOutlet var sendMessageTextView: NSTextView!
+    @IBOutlet var sendMessageTextView: SendMessageTextView!
     
     @IBOutlet weak var topBackgroundView: NSView!
     
@@ -39,7 +39,7 @@ class RightViewController: NSViewController {
         //发送信息TextView的设置
         sendMessageTextView.wantsLayer = true
         sendMessageTextView.backgroundColor = grayColor
-        
+        sendMessageTextView.delegate = self
         
     }
    
@@ -51,5 +51,24 @@ extension RightViewController: NSCollectionViewDelegate,NSCollectionViewDataSour
     func collectionView(_ collectionView: NSCollectionView, itemForRepresentedObjectAt indexPath: IndexPath) -> NSCollectionViewItem {
         return NSCollectionViewItem()
     }
+}
+extension RightViewController: NSTextViewDelegate {
+//    func control(control: NSControl, textView: NSTextView, doCommandBySelector commandSelector: Selector) -> Bool {
+//        if commandSelector == #selector(insertNewline(_:)) {
+//            if let modifierFlags = NSApplication.shared().currentEvent?.modifierFlags, (modifierFlags.rawValue & NSEventModifierFlags.shift.rawValue) != 0 {
+//                print("Shift-Enter detected.")
+//            } else {
+//                print("Enter detected.")
+//            }
+//            textView.insertNewlineIgnoringFieldEditor(self)
+//            
+//            return true
+//        }
+//        
+//        return false
+//    }
+//    override func insertNewline(_ sender: Any?) {
+//        print("new line")
+//    }
 }
 
