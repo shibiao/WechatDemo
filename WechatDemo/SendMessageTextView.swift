@@ -19,7 +19,7 @@ class SendMessageTextView: NSTextView {
         
         
     }
-   
+
    
     
     
