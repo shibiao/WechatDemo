@@ -15,5 +15,16 @@ class LeftSideController: NSViewController {
         view.wantsLayer = true
         view.layer?.backgroundColor = NSColor(red:0.15, green:0.15, blue:0.15, alpha:1.00).cgColor
     }
+    @IBAction func handleChat(_ sender: Any) {
+        
+        
+    }
+    @IBAction func handleContact(_ sender: Any) {
+        
+    }
+    @IBAction func handleFavorite(_ sender: Any) {
+        
+    }
+
     
 }
