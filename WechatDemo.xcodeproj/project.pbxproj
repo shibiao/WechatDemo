@@ -23,6 +23,7 @@
 		9183FE471E1B522F00DCE31B /* RightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9183FE461E1B522F00DCE31B /* RightViewController.swift */; };
 		9183FE4B1E1B53D500DCE31B /* ChatItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9183FE491E1B53D500DCE31B /* ChatItem.swift */; };
 		9183FE4C1E1B53D500DCE31B /* ChatItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9183FE4A1E1B53D500DCE31B /* ChatItem.xib */; };
+		91963F991E7F801F009F5E71 /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91963F981E7F801F009F5E71 /* Chat.storyboard */; };
 		91E2A6691E271F6D0077BDD9 /* SBSheetWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E2A6681E271F6D0077BDD9 /* SBSheetWindow.swift */; };
 		91E2A66B1E2720440077BDD9 /* SBSheetWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E2A66A1E2720440077BDD9 /* SBSheetWindowView.swift */; };
 		91E2A66D1E27204D0077BDD9 /* SBSheetWindowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91E2A66C1E27204D0077BDD9 /* SBSheetWindowView.xib */; };
@@ -47,6 +48,7 @@
 		9183FE461E1B522F00DCE31B /* RightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightViewController.swift; sourceTree = "<group>"; };
 		9183FE491E1B53D500DCE31B /* ChatItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatItem.swift; sourceTree = "<group>"; };
 		9183FE4A1E1B53D500DCE31B /* ChatItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatItem.xib; sourceTree = "<group>"; };
+		91963F981E7F801F009F5E71 /* Chat.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
 		91E2A6681E271F6D0077BDD9 /* SBSheetWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBSheetWindow.swift; sourceTree = "<group>"; };
 		91E2A66A1E2720440077BDD9 /* SBSheetWindowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBSheetWindowView.swift; sourceTree = "<group>"; };
 		91E2A66C1E27204D0077BDD9 /* SBSheetWindowView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBSheetWindowView.xib; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				916526041E7D361F001813A0 /* MainSplitViewController.swift */,
 				9183FE421E1B4A5400DCE31B /* LeftSideController.swift */,
 				9183FE371E1B4A2D00DCE31B /* Main.storyboard */,
+				91963F981E7F801F009F5E71 /* Chat.storyboard */,
 				914191491E7D3D9E0023342A /* Favorite.storyboard */,
 				914191471E7D3D700023342A /* Contact.storyboard */,
 				916526061E7D366D001813A0 /* Chat */,
@@ -238,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91963F991E7F801F009F5E71 /* Chat.storyboard in Resources */,
 				9183FE361E1B4A2D00DCE31B /* Assets.xcassets in Resources */,
 				91E2A66D1E27204D0077BDD9 /* SBSheetWindowView.xib in Resources */,
 				9141914B1E7D3D9E0023342A /* Favorite.storyboard in Resources */,

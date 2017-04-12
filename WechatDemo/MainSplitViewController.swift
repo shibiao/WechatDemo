@@ -12,7 +12,7 @@ class MainSplitViewController: NSSplitViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.insertSplitViewItem(<#T##splitViewItem: NSSplitViewItem##NSSplitViewItem#>, at: <#T##Int#>)
+    
     }
     override func viewDidAppear() {
         super.viewDidAppear()
