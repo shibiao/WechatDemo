@@ -1,6 +1,7 @@
 # WechatDemo
 MAC WeChat 仿微信MAC端 
->如果对你有帮助，请右上角Star,您的Star是我更新的动力，暂时只完成一小部分
+
+> 由于此项目很久没有维护，请跳转[仿macQQ](https://github.com/shibiao/MacQQ)
 
 >简书详细博客：[Swift3.0 开发MACOS应用程序 (7)： 仿微信MAC端](http://www.jianshu.com/p/ae2ef53b3469)
 
